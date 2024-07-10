@@ -13,4 +13,3 @@ xi, yi = int(x), int(y)
 xf = int((x * 100) % 100)
 yf = int((y - yi) * 100)
 print(xi == yf and yi == xf)
-
