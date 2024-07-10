@@ -10,7 +10,7 @@ print(1234 % 1000 // 10 + 5678 % 1000 // 10)
 # 4th programm
 x, y = 13.42, 42.13
 xi, yi = int(x), int(y)
-xf = int((x - xi) * 100)
+xf = int((x * 100) % 100)
 yf = int((y - yi) * 100)
-print(xi == yf)
-print(int((x - xi) * 100 + 1) == yi)
+print(xi == yf and yi == xf)
+
